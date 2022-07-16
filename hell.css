@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    font-family: 'Bebas Neue', cursive;
+    cursor: url(/images/firstan\ -\ Copy-F1-32x32x32.png),default  ; 
+    box-sizing: border-box;
+
+}
+
+
+
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: black;
+
+}
+
+nav{
+    position: fixed;
+    float: right;
+    background-color: #222034;
+    width: 100%;
+    height: 41px;
+    line-height: 260%;
+    z-index: 2;
+    box-shadow: 0 0 15px 0 pink;
+    
+}
+
+
+#navDiv{
+    display: flex;
+    float: right;
+    width: 100%;
+
+}
+
+
+#navDiv a{
+    float: right;
+    color: #00E0C6;
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    transition: 200ms;
+    
+}
+
+
+
+#hellId{
+    background-color: red;
+    box-shadow: 0 0 15px 0 pink;
+    
+}
+
+
+
+#navDiv #homeId:hover{
+    background-color: red;
+    transform: scale(1.1);
+    box-shadow: 0 0 15px 5px pink;
+
+}
+
+#navDiv #heavenId:hover{
+    background-color: red;
+    transform: scale(1.1);
+    box-shadow: 0 0 15px 5px pink;
+
+}
+
+#navDiv #aboutusId:hover{
+    background-color: red;
+    transform: scale(1.1);
+    box-shadow: 0 0 15px 5px pink;
+
+}
+
+
+#navDiv #hellId:active{
+    background-color: red;
+}
+
+
+#navDiv a:active{
+    background-color: #590404;
+
+}
+
+#wrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    z-index: -11
+
+}
+
+
+#myImage{
+  width: 500px;
+  height: 500px;
+  background-image: url(./images/myphoto.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:center ;
+  /* border: solid purple 10px ; */
+  border-radius: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 20px 20px rgb(196, 0, 196);
+ 
+}
