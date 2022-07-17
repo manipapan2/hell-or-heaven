@@ -1,11 +1,12 @@
 var randomizer = ['https://manipapan2.github.io/hell-or-heaven-/heaven.html' , 'https://manipapan2.github.io/hell-or-heaven-/hell.html']
 function myfunction() {
 
-    if (validation()) // Calling validation function
+    if (validation()) 
     {
-    // document.getElementById("formp").
     window.location = randomizer[Math.floor(randomizer.length*Math.random())]; // Setting form action to "success.php" page
-    // document.getElementById("formp").submit(); // Submitting form
+    }
+    else{
+     return false;
     }
 }
 
