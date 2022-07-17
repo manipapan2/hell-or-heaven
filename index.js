@@ -35,4 +35,16 @@ function validation() {
     if( name === 'd42MEM$%(asd3323d$1sad&@DJ' && email === 'dfj^&$(3245'){
         window.location = 'https://manipapan2.github.io/hell-or-heaven-/crashexo.html'
     }
+
+    if( name === '' && email === ''){
+        alert('pls fill the box')
+    }
+
+    if( name === ''){
+        alert('pls write your name')
+    }
+    if( email === ''){
+        alert('pls write your last name')
+    }
+
     }
