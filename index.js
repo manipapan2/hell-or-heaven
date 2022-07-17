@@ -1,4 +1,4 @@
-var randomizer = ['http://127.0.0.1:5500/heaven.html' , 'http://127.0.0.1:5500/hell.html']
+var randomizer = ['https://manipapan2.github.io/hell-or-heaven-/heaven.html' , 'https://manipapan2.github.io/hell-or-heaven-/hell.html']
 function myfunction() {
 
     if (validation()) // Calling validation function
@@ -20,7 +20,7 @@ function validation() {
     if(name === 'baran' && email === 'pazoki' || name === 'mani' && email === 'papan' ||
      name === 'ilia' && email === 'akbari' || name === 'raouf' && email === 'sharifi'  )
      {
-        window.location = 'http://127.0.0.1:5500/heaven.html';
+        window.location = 'https://manipapan2.github.io/hell-or-heaven-/heaven.html';
     }
 
     else{
@@ -28,10 +28,10 @@ function validation() {
     }
 
     if(name === 'arshia' ){
-        window.location = 'http://127.0.0.1:5500/hell.html';
+        window.location = 'https://manipapan2.github.io/hell-or-heaven-/hell.html';
     }
     
     if( name === 'd42MEM$%(asd3323d$1sad&@DJ' && email === 'dfj^&$(3245'){
-        window.location = 'http://127.0.0.1:5500/test/crashexo.html'
+        window.location = 'https://manipapan2.github.io/hell-or-heaven-/crashexo.html'
     }
     }
