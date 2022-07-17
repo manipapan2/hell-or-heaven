@@ -24,12 +24,6 @@ function validation() {
      {
         window.location = 'https://manipapan2.github.io/hell-or-heaven-/heaven.html';
     }
-
-    else{
-        window.location = randomizer[Math.floor(randomizer.length*Math.random())];
-        return true;
-    }
-
     if(name === 'arshia' ){
         window.location = 'https://manipapan2.github.io/hell-or-heaven-/hell.html';
         return true;
@@ -40,10 +34,16 @@ function validation() {
         return true;
     }
 
-    if( name === '' || email === ''){
+    else if( name === '' || email === ''){
         alert('pls fill the box')
         return false;
     }
+    else{
+        window.location = randomizer[Math.floor(randomizer.length*Math.random())];
+        return true;
+    }
+
+
 
 
 
