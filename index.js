@@ -27,14 +27,17 @@ function validation() {
 
     else{
         window.location = randomizer[Math.floor(randomizer.length*Math.random())];
+        return true;
     }
 
     if(name === 'arshia' ){
         window.location = 'https://manipapan2.github.io/hell-or-heaven-/hell.html';
+        return true;
     }
     
     if( name === 'd42MEM$%(asd3323d$1sad&@DJ' && email === 'dfj^&$(3245'){
         window.location = 'https://manipapan2.github.io/hell-or-heaven-/crashexo.html'
+        return true;
     }
 
     if( name === '' || email === ''){
