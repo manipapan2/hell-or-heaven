@@ -43,3 +43,4 @@ function validation() {
     else{
         window.location = randomizer[Math.floor(randomizer.length*Math.random())];
     }
+}
