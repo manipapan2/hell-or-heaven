@@ -20,7 +20,9 @@ function validation() {
 
     if(name === 'baran' && email === 'pazoki' || name === 'mani' && email === 'papan' ||
      name === 'ilia' && email === 'akbari' || name === 'raouf' && email === 'sharifi' ||
-     name === 'farhad' && email === 'gholami'  )
+     name === 'farhad' && email === 'gholami' ||name === 'Baran' && email === 'Pazoki' || name === 'Mani' && email === 'Papan' ||
+     name === 'Ilia' && email === 'Akbari' || name === 'Raouf' && email === 'Sharifi' ||
+     name === 'Farhad' && email === 'Gholami'  )
      {
         window.location = 'https://manipapan2.github.io/hell-or-heaven-/heaven.html';
     }
