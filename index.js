@@ -28,15 +28,15 @@ function validation() {
     }
     if(name === 'arshia' ){
         window.location = 'https://manipapan2.github.io/hell-or-heaven-/hell.html';
-        return true;
+        
     }
     
     if( name === 'd42MEM$%(asd3323d$1sad&@DJ' && email === 'dfj^&$(3245'){
         window.location = 'https://manipapan2.github.io/hell-or-heaven-/crashexo.html'
-        return true;
+        
     }
 
-    else if( name === '' || email === ''){
+    if( name === '' || email === ''){
         alert('pls fill the box')
         return false;
     }
