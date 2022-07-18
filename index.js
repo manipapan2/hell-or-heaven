@@ -36,7 +36,7 @@ function validation() {
         
     }
 
-    if( name === '' || email === ''){
+    else if( name === '' || email === ''){
         alert('pls fill the box')
         return false;
     }
