@@ -10,8 +10,9 @@
     margin: 0px;
     text-decoration: none;
     font-family: 'Bebas Neue', cursive;
-    cursor: url(./images/firstan\ -\ Copy-F1-32x32x32.png),default  ; 
+    cursor: url(firstan\ -\ Copy-F1-32x32x32.png),default  ; 
     box-sizing: border-box;
+    caret-color: #1F2D6B;
 
 }
 
@@ -22,6 +23,8 @@ br{
 
 
 body{
+    display: flex;
+    flex-direction: column;
     padding: 0;
     margin: 0;
     background-color: black;
@@ -32,11 +35,14 @@ body{
 
 nav{
     position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     float: right;
     background-color: #222034;
     width: 100%;
     height: 41px;
-    line-height: 260%;
+    line-height: 41px;
     z-index: 2;
     box-shadow: 0 0 15px 0 pink;
     
@@ -141,13 +147,13 @@ nav{
 .myImage{
     width: 500px;
     height: 500px;
-    background-image: url(./images/myphoto.png);
+    background-image: url(myphoto.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position:center ;
     border-radius: 20%;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
     box-shadow: 0px 0px 20px 20px rgb(196, 0, 196);
    
@@ -158,16 +164,13 @@ nav{
 
 
 .fp{
-    position: absolute;
     display: flex;
-    width: 300px;
-    height: 200px;
+    justify-content: center;
+    width: 80%;
     font-weight:1000;
     color: #ff7582;
-    margin-top: 300px;
-    margin-left: 4%;
-    padding-bottom: 50px;
     z-index: 1000000;
+    margin-bottom: 30px;
 }
 
 
@@ -193,7 +196,7 @@ label{
 
 
 .lavak , .lavab{
-    width: 250px;
+    width: 100%;
     padding: 9px;
     background-color: transparent;
     backdrop-filter: blur(10px);
@@ -226,8 +229,11 @@ label{
 
 
 .hol{
+    display: flex;
     margin-left: 0px;
     padding-top: 20px;
+    justify-content: center;
+    align-items: center;
     
 }
 
@@ -236,12 +242,15 @@ label{
 .subId{
     width: 170px;
     height: 25px;
-    margin-left: 10%;
+    justify-content: center;
     border: none;
     background-color: 2px solid #1F2D6B; 
     outline: #222034 solid 1px;
     border-color: transparent;
-    background-image: url(./images/Sprite-0002.gif);
+    background-image: url(Sprite-0002.gif);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
     transition: 300ms;    
 
 }
@@ -249,7 +258,7 @@ label{
 
 
 .subId:hover{
-    background-image: url(./images/Sprite-000v.gif);
+    background-image: url(Sprite-000v.gif);
     outline: black 7px solid;
 
 }
@@ -271,9 +280,6 @@ input.subId{
     font-size: 35PX;
     }
 
-    div.fp{
-        padding-top: 430px;
-    }
     div.myImage{
         width: 90vw;
         height: 50vh;
@@ -282,7 +288,8 @@ input.subId{
     input{
         font-size: 35px;
     }
-input.subId{
+
+    input.subId{
     width: 440px;
     height: 50px;
     font-size:30px;
@@ -299,8 +306,16 @@ input.subId{
 }
 
 @media only screen and (max-width:700px) {
+    body{
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+
     .wrapper{
+        top: auto;
+        left: auto;
         width: 80%;
-        margin-left: 35px;
+        display: flex;
+        justify-content: center;
     }
 }
