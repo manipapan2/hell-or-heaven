@@ -122,7 +122,16 @@ nav{
   align-items: center;
   justify-content: center;
   box-shadow: 0px 0px 20px 20px rgb(196, 0, 196);
+  user-select:text;
  
+}
+
+#myImage p{
+cursor:auto;
+}
+
+#myImage a{
+cursor:auto;
 }
 
 #pPosition{
