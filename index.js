@@ -1,3 +1,5 @@
+var gorbe = document.getElementById("gorbe")
+
 var randomizer = ['https://manipapan2.github.io/hell-or-heaven-/heaven.html' , 'https://manipapan2.github.io/hell-or-heaven-/hell.html']
 function myfunction() {
 
@@ -43,4 +45,51 @@ function validation() {
     else{
         window.location = randomizer[Math.floor(randomizer.length*Math.random())];
     }
+
+
+
 }
+
+function ger(){
+    var wo = window.innerWidth + 100
+    console.log(window.innerWidth,wo)
+    gorbe.style.marginLeft=wo + "px"
+    gorbe.style.display="flex"
+}
+
+setTimeout(() => {
+    ger()
+}, "100");
+
+
+var sety = setInterval(() => {
+    let currentTime = new Date();
+    
+    if (currentTime.getHours() === 11 && currentTime.getMinutes() === 11) {
+      let myVariable = "It";
+      gorbee()
+    }
+}, 500);
+
+
+// gorbe.style.marginLeft=window.innerWidth 
+function gorbee(){
+    clearInterval(sety)
+    gorbe.style.transition = "5s"
+    gorbe.style.transform="translateX(-200px)"
+    setTimeout(() => {
+        gorbe.style.backgroundImage="url(gorbe.gif)"
+    }, "5000");
+
+    setTimeout(() => {
+        gorbe.style.backgroundImage="url(gorbe.png)"
+    }, 11500);
+
+    setTimeout(() => {
+        gorbe.style.transform="translateX(0px)"
+    }, 14000);
+}
+
+
+
+

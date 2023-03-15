@@ -25,6 +25,7 @@ br{
 body{
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
     padding: 0;
     margin: 0;
     background-color: black;
@@ -272,6 +273,34 @@ input.subId{
 
 }
 
+.gorbe{
+    position: absolute;
+    display: none;
+    top: 50%;
+    width: 35px;
+    height: 35px;
+    /* background-color: red; */
+    background-image: url(gorbe.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* animation: 1s linear gorbeann infinite; */
+}
+
+/* .gorbean{
+    animation: 1s linear gorbean;
+} */
+
+/* @keyframes gorbeann {
+    0%{
+        right: 1;
+    }
+
+    100%{
+        right: 10;
+    }
+} */
+
 
 
 @media screen and (min-height: 1000px) {
@@ -280,10 +309,10 @@ input.subId{
     font-size: 35PX;
     }
 
-    div.myImage{
+    /* div.myImage{
         width: 90vw;
         height: 50vh;
-    }
+    } */
 
     input{
         font-size: 35px;
@@ -312,10 +341,8 @@ input.subId{
     }
 
     .wrapper{
-        top: auto;
-        left: auto;
-        width: 80%;
         display: flex;
         justify-content: center;
+        padding: 50px;
     }
 }
