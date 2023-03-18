@@ -47,18 +47,18 @@ nav{
     z-index: 2;
     box-shadow: 0 0 15px 0 pink;
     
-}
-
-
-.navDiv{
+  }
+  
+  
+  .navDiv{
     display: flex;
     float: right;
     width: 100%;
-
-}
-
-
-.navDiv a{
+  
+  }
+  
+  
+  .navDiv a{
     float: right;
     color: #00E0C6;
     width: 100%;
@@ -70,50 +70,41 @@ nav{
     user-select: none;
     
     
-}
-
-
-
-.homeStyle{
+  }
+  
+  .navDiv a:hover{
+    color: #00E0C6;
+    background-color: red;
+    transform: scale(1.1);
+    box-shadow: 0 0 15px 5px pink;
+  }
+  
+  
+  .navDiv a:active{
+    background-color: #590404;
+  
+  }
+  
+  
+  .homeStyle{
     background-color: red;
     box-shadow: 0 0 15px 0 pink;
     user-select: none;
     
-}
-
-
-
-.navDiv #aboutusId:hover{
+  }
+  
+  .navDiv .homeStyle:hover{
+    background-color: red;
+    transform: scale(1);
+    box-shadow: 0 0 15px 0px pink;
+  }
+  
+  .homeStyle:active{
     background-color: red;
     transform: scale(1.1);
-    box-shadow: 0 0 15px 5px pink;
-
-
-}
-
-.navDiv #heavenId:hover{
-    background-color: red;
-    transform: scale(1.1);
-    box-shadow: 0 0 15px 5px pink;
-
-}
-
-.navDiv #hellId:hover{
-    background-color: red;
-    transform: scale(1.1);
-    box-shadow: 0 0 15px 5px pink;
-
-}
-
-
-.navDiv .homeStyle:active{
-    background-color: red;
-}
-
-.navDiv a:active{
-    background-color: #590404;
-
-}
+    box-shadow: 0 0 15px 0px pink;
+  }
+  
 
 
 .subId :active{
@@ -273,6 +264,17 @@ input.subId{
 
 }
 
+.container{
+    position: relative;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    overflow: hidden;
+    justify-content: flex-end;
+    padding: 60px;
+}
+
 .gorbe{
     position: absolute;
     display: none;
@@ -285,6 +287,7 @@ input.subId{
     background-size: cover;
     background-repeat: no-repeat;
     /* animation: 1s linear gorbeann infinite; */
+    z-index: 1000000;
 }
 
 /* .gorbean{
@@ -335,10 +338,10 @@ input.subId{
 }
 
 @media only screen and (max-width:700px) {
-    body{
-        padding-right: 50px;
-        padding-left: 50px;
+    .container{
+        padding: 20px;
     }
+
 
     .wrapper{
         display: flex;

@@ -53,7 +53,7 @@ function validation() {
 function ger(){
     var wo = window.innerWidth + 100
     console.log(window.innerWidth,wo)
-    gorbe.style.marginLeft=wo + "px"
+    gorbe.style.transform="translateX(" + 100 + "px)"
     gorbe.style.display="flex"
 }
 
@@ -76,7 +76,7 @@ var sety = setInterval(() => {
 function gorbee(){
     clearInterval(sety)
     gorbe.style.transition = "5s"
-    gorbe.style.transform="translateX(-200px)"
+    gorbe.style.transform="translateX(0px)"
     setTimeout(() => {
         gorbe.style.backgroundImage="url(gorbe.gif)"
     }, "5000");
@@ -86,10 +86,13 @@ function gorbee(){
     }, 11500);
 
     setTimeout(() => {
-        gorbe.style.transform="translateX(0px)"
+        gorbe.style.transform="translateX(" + 100 +"px)"
     }, 14000);
 }
 
 
 
 
+// setTimeout(() => {
+//     gorbee()
+// }, "1000");
