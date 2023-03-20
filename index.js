@@ -78,11 +78,11 @@ function gorbee(){
     gorbe.style.transition = "5s"
     gorbe.style.transform="translateX(0px)"
     setTimeout(() => {
-        gorbe.style.backgroundImage="url(/!images/gorbe.gif)"
+        gorbe.style.backgroundImage="url(gorbe.gif)"
     }, "5000");
 
     setTimeout(() => {
-        gorbe.style.backgroundImage="url(/!images/gorbe.png)"
+        gorbe.style.backgroundImage="url(gorbe.png)"
     }, 11500);
 
     setTimeout(() => {
