@@ -65,7 +65,7 @@ setTimeout(() => {
 var sety = setInterval(() => {
     let currentTime = new Date();
     
-    if (currentTime.getHours() === 11 && currentTime.getMinutes() === 11) {
+    if (currentTime.getHours() === 23 && currentTime.getMinutes() === 11) {
       let myVariable = "It";
       gorbee()
     }
@@ -78,11 +78,11 @@ function gorbee(){
     gorbe.style.transition = "5s"
     gorbe.style.transform="translateX(0px)"
     setTimeout(() => {
-        gorbe.style.backgroundImage="url(gorbe.gif)"
+        gorbe.style.backgroundImage="url(/!images/gorbe.gif)"
     }, "5000");
 
     setTimeout(() => {
-        gorbe.style.backgroundImage="url(gorbe.png)"
+        gorbe.style.backgroundImage="url(/!images/gorbe.png)"
     }, 11500);
 
     setTimeout(() => {
