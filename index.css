@@ -148,6 +148,7 @@ nav{
     align-items: flex-end;
     justify-content: center;
     box-shadow: 0px 0px 20px 20px rgb(196, 0, 196);
+    z-index: 100;
    
 }
 
@@ -273,7 +274,7 @@ input.subId{
     overflow: hidden;
     justify-content: flex-end;
     padding: 60px;
-    z-index: -1111;
+    z-index: 1000000;
 }
 
 .gorbe{

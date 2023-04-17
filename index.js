@@ -71,6 +71,11 @@ var sety = setInterval(() => {
     }
 }, 500);
 
+setInterval(() => {
+    let currentTime = new Date();
+    console.log(currentTime)
+}, 1000);
+
 
 // gorbe.style.marginLeft=window.innerWidth 
 function gorbee(){
