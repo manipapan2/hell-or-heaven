@@ -275,6 +275,7 @@ input.subId{
     justify-content: flex-end;
     padding: 60px;
     z-index: 1000000;
+    pointer-events: none;
 }
 
 .gorbe{
