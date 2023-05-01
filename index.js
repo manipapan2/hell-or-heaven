@@ -22,17 +22,17 @@ function validation() {
      name === 'ilia' && email === 'akbari' || name === 'raouf' && email === 'sharifi' ||
      name === 'farhad' && email === 'gholami'  )
      {
-        window.location = 'https://manipapan2.github.io/hell-or-heaven-/heaven.html';
+        window.location = 'https://manipapan2.github.io/hell-or-heaven/heaven.html';
         return false;
     }
 
     if(name === 'arshia' ){
-        window.location = 'https://manipapan2.github.io/hell-or-heaven-/hell.html';
+        window.location = 'https://manipapan2.github.io/hell-or-heaven/hell.html';
         return false;
     }
 
     if( name === 'd42MEM$%(asd3323d$1sad&@DJ' && email === 'dfj^&$(3245'){
-        window.location = 'https://manipapan2.github.io/hell-or-heaven-/crashexo.html'
+        window.location = 'https://manipapan2.github.io/hell-or-heaven/crashexo.html'
         return false;
     }
 
